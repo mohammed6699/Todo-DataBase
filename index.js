@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 const todoRouter = require('./routes/routes');
 const userRouter = require('./routes/userRoutes')
-const port = process.env.PORT;
+const port = process.env.PORT || 10000;
 const url = process.env.MONGO_TODO_URL
 const mongoose = require('mongoose');
 const path = require('path');
